@@ -1,6 +1,6 @@
-# 🚀 Setup del Proyecto (Docker + Jupyter)
+# 🚀 Setup del Proyecto (Python + Jupyter)
 
-Este proyecto utiliza Docker para garantizar que el entorno funcione igual en cualquier computadora.
+Este proyecto puede ejecutarse localmente sin Docker utilizando Python y Jupyter Notebook.
 
 ---
 
@@ -9,13 +9,14 @@ Este proyecto utiliza Docker para garantizar que el entorno funcione igual en cu
 Instalar previamente:
 
 - [Git](https://git-scm.com/)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- Python 3.10+ recomendado
+- Jupyter Notebook
 
 Verificar instalación:
 
 ```bash
 git --version
-docker --version
+python --version
 ```
 
 ---
@@ -34,53 +35,65 @@ cd Proyecto-Fase-2-An-lisis-Grupo-8
 
 ---
 
-# 🐳 Levantar Docker
+# 📦 Crear entorno virtual (recomendado)
 
-Ejecutar:
+## Windows
 
 ```bash
-docker compose up --build
+python -m venv venv
+venv\Scripts\activate
 ```
 
-> Si tu versión de Docker usa el comando antiguo:
+## Linux / Mac
 
 ```bash
-docker-compose up --build
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+# 📚 Instalar dependencias
+
+Si existe un archivo `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+Si no existe:
+
+```bash
+pip install jupyter pandas numpy matplotlib seaborn scikit-learn
 ```
 
 ---
 
 # 📓 Abrir Jupyter Notebook
 
-Cuando el contenedor termine de cargar, abrir en el navegador:
+Ejecutar:
+
+```bash
+jupyter notebook
+```
+
+o:
+
+```bash
+jupyter lab
+```
+
+Abrir en el navegador:
 
 ```text
 http://localhost:8888
-```
-
-Desde ahí podrás abrir y ejecutar los notebooks (`.ipynb`).
-
----
-
-# 🛑 Detener el proyecto
-
-En la terminal:
-
-```bash
-CTRL + C
-```
-
-Luego ejecutar:
-
-```bash
-docker compose down
 ```
 
 ---
 
 # 🔄 Flujo normal de trabajo
 
-Cada vez que quieras trabajar en el proyecto:
+Cada vez que quieras trabajar:
 
 ## Entrar a la carpeta
 
@@ -88,16 +101,24 @@ Cada vez que quieras trabajar en el proyecto:
 cd Proyecto-Fase-2-An-lisis-Grupo-8
 ```
 
-## Levantar Docker
+## Activar entorno virtual
+
+### Windows
 
 ```bash
-docker compose up
+venv\Scripts\activate
+```
+
+### Linux / Mac
+
+```bash
+source venv/bin/activate
 ```
 
 ## Abrir Jupyter
 
-```text
-http://localhost:8888
+```bash
+jupyter notebook
 ```
 
 ---
@@ -123,7 +144,7 @@ Subir cambios:
 git push
 ```
 
-Actualizar cambios del repositorio:
+Actualizar proyecto:
 
 ```bash
 git pull
@@ -133,10 +154,10 @@ git pull
 
 # ✅ Recomendaciones
 
-- No volver a clonar el repositorio cada vez
-- Siempre trabajar dentro de la misma carpeta
-- Ejecutar los notebooks únicamente desde Jupyter dentro del contenedor Docker
-- Mantener Docker Desktop abierto antes de ejecutar los comandos
+- Usar entorno virtual (`venv`)
+- No instalar librerías globalmente
+- Trabajar siempre dentro de la carpeta del proyecto
+- Mantener actualizado el archivo `requirements.txt`
 
 ---
 
@@ -147,11 +168,23 @@ git clone https://github.com/SoundSpoon/Proyecto-Fase-2-An-lisis-Grupo-8.git
 
 cd Proyecto-Fase-2-An-lisis-Grupo-8
 
-docker compose up --build
+python -m venv venv
 ```
 
-Abrir en navegador:
+## Windows
 
-```text
-http://localhost:8888
+```bash
+venv\Scripts\activate
+```
+
+## Linux / Mac
+
+```bash
+source venv/bin/activate
+```
+
+```bash
+pip install -r requirements.txt
+
+jupyter notebook
 ```
