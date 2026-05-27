@@ -38,3 +38,7 @@ Dentro de este mismo repositorio se puede encontrar un archivo de nombre [REDACT
 
 
 # Consideraciones éticas
+
+Debido a que es un sistema que busca predecir enfermedades en pacientes y especialmente en niños, el fin en mente de este algoritmo es que funcione como una herramienta para facilitar el trabajo del médico sin tratar de reemplazar el trabajo de este, ya que siempre se debe de tener el pensamiento crítico de un médico para corroborar los resultados de este.
+Por ello, el proposito real de este algoritmo es predecir si un paciente tiene posibilidades de presentar asma o no, y si se detecta que puede llegar a tener asma, que se muestre una alarma para que el médico pueda dar un diagnóstico final.
+Por ello, se podría implementar como una extensión que pueda coexistir dentro del HIS del hospital o instalación en la que se está trabajando.
