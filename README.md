@@ -6,3 +6,7 @@ Por medio de este proyecto, se pretende analizar por medio de Machine Learning u
 - Predicción de hospitalización según evolución
 - Apoyo en toma de decisiones clínicas en emergencia
 
+
+# Decisión clínica
+Un paciente que no cuenta con su historial clínico es propenso a tener dificultades que podrían ser evitadas si tan solo el médico que lo examina tuviera más información de este, principalmente cuando el paciente sufre de una enfermedad como el asma ya que tiene un fuerte componente hereditario a pesar de no ser una herencia directa
+
