@@ -23,5 +23,10 @@ En este repositorio podrá encontrar los siguientes documentos:
 
 # Resultados Principales
 
-El entranamiento que se utilizó para poder hacer un algoritmo predictor de asma se basó en los síntomas principales que se pueden observar en un paciente con asma el cual utilizó 
+El entranamiento que se utilizó para poder hacer un algoritmo predictor de asma se basó en los síntomas principales que se pueden observar en un paciente con asma el cual utilizó los sintomas de cansancio, malestar de garganta, dificultad para respirar, tos seca y congestión nasal como los sintomás que debe de detectar el algoritmo para poder predecir si el paciente puede padecer de asma o no. La idea principal es que si el sistema detecta dichos sintomas, pueda llegar a detectar un patrón matemático que pueda predecir si un paciente presenta asma o no y así reducir los riesgos que podrían afectar a la salud del paciente.
+Sin embargo, al realizar las pruebas necesarias para poder generar el algoritmo de predicción de asma se encontró que....{
+
+# Acceso al data set
+
+
 
