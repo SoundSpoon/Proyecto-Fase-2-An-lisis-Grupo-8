@@ -28,5 +28,13 @@ Sin embargo, al realizar las pruebas necesarias para poder generar el algoritmo 
 
 # Acceso al data set
 
+El algoritmo idealmente debería de ser entrenado con data real de pacientes reales para evitar que la variabilidad del mundo real afecte en el algoritmo y así este ya esté entrenado con datos veridicos y no simulados, sin embargo, debido a la falta de datos como los mencionados previamente, se optó por el uso de datos simulados encontrados en Kaggle los cuales presentan datos de pacientes con y sin asma separados en rangos de edades que entran justamente en los parametros establecidos por el proyecto. 
+Estos datos se pueden encontrar dentro de este repositorio, al igual que se pueden encontrar en el siguiente link:
+https://www.kaggle.com/datasets/deepayanthakur/asthma-disease-prediction/data
+
+# Set up del entorno
+
+Dentro de este mismo repositorio se puede encontrar un archivo de nombre [REDACTED] en el cual se detalla cada uno de los pasos a seguir para poder abrir y preparar el sistema para poder correr el algoritmo preparado.
 
 
+# Consideraciones éticas
