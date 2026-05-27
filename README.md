@@ -34,7 +34,7 @@ https://www.kaggle.com/datasets/deepayanthakur/asthma-disease-prediction/data
 
 # Set up del entorno
 
-Dentro de este mismo repositorio se puede encontrar un archivo de nombre [REDACTED] en el cual se detalla cada uno de los pasos a seguir para poder abrir y preparar el sistema para poder correr el algoritmo preparado.
+Dentro de este mismo repositorio se puede encontrar un archivo de nombre SETUP_ALH.md en el cual se detalla cada uno de los pasos a seguir para poder abrir y preparar el sistema para poder correr el algoritmo preparado.
 
 
 # Consideraciones éticas
