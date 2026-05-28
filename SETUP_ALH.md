@@ -64,7 +64,7 @@ pip install -r requirements.txt
 Si no existe:
 
 ```bash
-pip install jupyter pandas numpy matplotlib seaborn scikit-learn
+pip install jupyter numpy pandas matplotlib seaborn scikit-learn xgboost
 ```
 
 ---
