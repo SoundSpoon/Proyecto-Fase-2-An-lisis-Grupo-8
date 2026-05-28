@@ -16,6 +16,7 @@ Por ello es importante considerar maneras de detectar si el paciente tiene asma 
 # Estructura del repositorio
 En este repositorio podrá encontrar los siguientes documentos:
  - Datos utilizados para el machine learning.
+ - Calendario de trabajo del proyecto.
  - Presentación utilizada para presentar los hallazgos del machine learning.
  - Instrucciones de uso de Jupyternotebook
  - Instrucciones para levantar docker para permitir el uso del programa utilizado.
