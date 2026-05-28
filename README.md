@@ -42,6 +42,8 @@ Finalmente, Sore-Throat (dolor de garganta) aparece con menor frecuencia, alrede
 
 <img width="1666" height="1095" alt="image" src="https://github.com/user-attachments/assets/5eefbd53-0a30-4c1e-9974-116f77dfd032" />
 Las curvas ROC muestran que los modelos no lograron diferenciar correctamente los casos de severidad, ya que todos obtuvieron AUC cercanos a 0.5, equivalente a un comportamiento aleatorio. Sin embargo, se decidió continuar trabajando con la Red Neuronal (MLP), ya que obtuvo uno de los valores de AUC más altos dentro de los modelos evaluados (≈0.491) y presenta mayor capacidad para identificar patrones complejos y relaciones no lineales en los datos, lo que podría mejorar el desempeño con una mayor optimización y ajuste del modelo.
+
+
 # Acceso al data set
 
 El algoritmo idealmente debería de ser entrenado con data real de pacientes reales para evitar que la variabilidad del mundo real afecte en el algoritmo y así este ya esté entrenado con datos veridicos y no simulados, sin embargo, debido a la falta de datos como los mencionados previamente, se optó por el uso de datos simulados encontrados en Kaggle los cuales presentan datos de pacientes con y sin asma separados en rangos de edades que entran justamente en los parametros establecidos por el proyecto. 
