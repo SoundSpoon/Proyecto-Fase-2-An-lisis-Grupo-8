@@ -31,6 +31,17 @@ Sin embargo, al realizar las pruebas necesarias para poder generar el algoritmo 
 
 Esta simplificación eliminó el ruido estadístico interclase, permitiendo a los algoritmos como; Random Forest Profundo, Gradient Boosting y XGBoost, permitieran identificar con mayor precisión los patrones de interacción no lineales entre los síntomas binarios. Asimismo, como se puede observar en la tabla previa, el análisis de importancia de variables por permutación reveló que factores como el dolor de garganta aportaban un peso predictivo cercano a cero, actuando como ruido menor dentro de la arquitectura, mientras que la combinación de disnea (Difficulty-in-Breathing) y tos seca (Dry-Cough) se consolidaron como el principal factor determinante para disparar de forma automatizada las alertas de riesgo hospitalario.
 
+
+<img width="1201" height="902" alt="image" src="https://github.com/user-attachments/assets/3a1abbe7-a947-4e06-bff2-fac01e55cd57" />
+
+La gráfica muestra la prevalencia de distintos síntomas en pacientes clasificados como casos graves. Se observa que los síntomas más frecuentes son Dry-Cough (tos seca) y Runny-Nose (secreción nasal), con porcentajes cercanos al 55%, lo que indica que son manifestaciones comunes en los casos severos analizados.
+
+Por otro lado, Tiredness (cansancio) y Difficulty-in-Breathing (dificultad para respirar) presentan una prevalencia aproximada del 50%. La dificultad para respirar es especialmente relevante desde el punto de vista clínico, ya que suele asociarse con compromiso respiratorio y mayor gravedad de la enfermedad.
+
+Finalmente, Sore-Throat (dolor de garganta) aparece con menor frecuencia, alrededor del 30%, lo que sugiere que este síntoma podría tener menor relación con los casos más severos en comparación con los demás síntomas evaluados.
+
+<img width="1666" height="1095" alt="image" src="https://github.com/user-attachments/assets/5eefbd53-0a30-4c1e-9974-116f77dfd032" />
+Las curvas ROC muestran que los modelos no lograron diferenciar correctamente los casos de severidad, ya que todos obtuvieron AUC cercanos a 0.5, equivalente a un comportamiento aleatorio. Sin embargo, se decidió continuar trabajando con la Red Neuronal (MLP), ya que obtuvo uno de los valores de AUC más altos dentro de los modelos evaluados (≈0.491) y presenta mayor capacidad para identificar patrones complejos y relaciones no lineales en los datos, lo que podría mejorar el desempeño con una mayor optimización y ajuste del modelo.
 # Acceso al data set
 
 El algoritmo idealmente debería de ser entrenado con data real de pacientes reales para evitar que la variabilidad del mundo real afecte en el algoritmo y así este ya esté entrenado con datos veridicos y no simulados, sin embargo, debido a la falta de datos como los mencionados previamente, se optó por el uso de datos simulados encontrados en Kaggle los cuales presentan datos de pacientes con y sin asma separados en rangos de edades que entran justamente en los parametros establecidos por el proyecto. 
