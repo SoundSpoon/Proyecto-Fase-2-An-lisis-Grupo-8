@@ -1,4 +1,4 @@
-<img width="625" height="490" alt="image" src="https://github.com/user-attachments/assets/072e4a47-91d0-4962-81bc-3000e8b2518a" /># Proyecto-Fase-2-Análisis-Grupo-8
+# Proyecto-Fase-2-Análisis-Grupo-8
 Una cantidad significativa de niños menores de 10 años presenta síntomas de asma en el país de Guatemala. Como bien ha sido documentado, la mayoría de estos pacientes puede ser controlados si se detecta su caso específico antes de que adquiera severidad. 
 
 Por medio de este proyecto, se pretende analizar por medio de Machine Learning una gran base de datos sintética, y lograr predecir:
