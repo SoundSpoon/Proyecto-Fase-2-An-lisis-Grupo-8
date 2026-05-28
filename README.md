@@ -42,3 +42,8 @@ Dentro de este mismo repositorio se puede encontrar un archivo de nombre SETUP_A
 Debido a que es un sistema que busca predecir enfermedades en pacientes y especialmente en niños, el fin en mente de este algoritmo es que funcione como una herramienta para facilitar el trabajo del médico sin tratar de reemplazar el trabajo de este, ya que siempre se debe de tener el pensamiento crítico de un médico para corroborar los resultados de este.
 Por ello, el proposito real de este algoritmo es predecir si un paciente tiene posibilidades de presentar asma o no, y si se detecta que puede llegar a tener asma, que se muestre una alarma para que el médico pueda dar un diagnóstico final.
 Por ello, se podría implementar como una extensión que pueda coexistir dentro del HIS del hospital o instalación en la que se está trabajando.
+
+# Presentación de resultados
+
+En el siguiente link se puede observar el link en el que se encuentra la presentación de canva utilizada durante la presentación final del proyecto:
+https://canva.link/wbb5cnudmw37smg
